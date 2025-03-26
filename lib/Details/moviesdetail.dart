@@ -281,7 +281,6 @@ import '../HomePage/home.dart';
 import '../data/app_constant.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../function/slider.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../function/trailer.dart';
 import '../function/userreview.dart';

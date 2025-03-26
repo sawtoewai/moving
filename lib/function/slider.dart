@@ -22,10 +22,14 @@ Widget sliderlist(
                     return GestureDetector(
                       onTap: (){
                         if(type == 'movie'){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => Moviesdetail(firstlistname[index]['id']),));
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) => Moviesdetail(
+                              firstlistname[index]['id']),));
                         }
                         else if(type == 'tv'){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => Tvseriesdetail(firstlistname[index]['id']),));
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) => TvSeriesDetails(
+                              id:firstlistname[index]['id']),));
                         }
                       },
                       child: Container(

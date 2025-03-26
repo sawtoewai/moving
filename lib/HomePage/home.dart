@@ -7,6 +7,7 @@ import 'package:moving/SelectionPage/movies.dart';
 import 'package:moving/SelectionPage/tvseries.dart';
 import 'package:moving/SelectionPage/upcomming.dart';
 
+import '../function/drawer.dart';
 import '../function/searchbarfunc.dart';
 
 
@@ -65,6 +66,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
     TabController tabController = TabController(length: 3, vsync: this);
 
     return Scaffold(
+      drawer: drawerfunc(),
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
